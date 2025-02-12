@@ -28,7 +28,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile
           push: true
-          tags: bibi4c/blockscout-${{ env.DOCKER_CHAIN_NAME }}:${{ env.RELEASE_VERSION }}-${{ env.SHORT_SHA }}
+          tags: oasysgames/blockscout-v6-backend:${{ env.RELEASE_VERSION }}-${{ env.SHORT_SHA }}
           labels: https://github.com/oasysgames/blockscout-v6-backend
           platforms: linux/arm64/v8
           build-args: |
